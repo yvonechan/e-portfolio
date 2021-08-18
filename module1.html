@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chan Kei Yiu Yvone's e-portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, Chan Kei Yiu Yvone, Msc Computer Science"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+      <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+      <!-- Banner -->
+            <section
+        class="
+          spotlight
+          style1
+          orient-right
+          content-align-left
+          image-position-center
+          onscroll-image-fade-in
+        "
+        id="first"
+      >
+        <div class="content">
+          <h2>Secure Software Development (Computer Science)</h2>
+          <h3>Learning Outcomes:</h3>
+          <ol>
+            <li>Identify & manage security risks as part of a software development project</li>
+            <li>Critically analyse development problems and determine appropriate methodologies, tools and techniques to solve them</li>
+            <li>Design, develop and adapt programs and to produce a solution that meets the design brief and critically evaluate solutions that are produced</li>
+            <li>Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation</li>
+          </ol>
+        </div>
+        <div class="image">
+          <img src="images/digitization-4770296_1920.jpg" alt="digitalization" />
+        </div>
+      </section>
+      <!--Content-->
+      <div class="module-content">
+      <h3>Artefacts<span style="padding-left:20px; font-size: 35px;" id="artefactPlus">+</span></h3>
+    <div id="artefacts">placeholder</div>
+    </div>
+          <div class="module-content">
+      <h3>Reflections<span style="padding-left:20px; font-size: 35px;" id="reflectionPlus">+</span></h3>
+    <div id="reflections">placeholder</div>
+    </div>
+     <div class="module-content">
+      <h3>Meeting Notes<span style="padding-left:20px; font-size: 35px;" id="notesPlus">+</span></h3>
+    <div id="notes">placeholder</div>
+    </div>
+    <div class="module-content">
+      <h3>Professional Skills Matrix and Action Plan<span style="padding-left:20px; font-size: 35px;" id="matrixPlus">+</span></h3>
+    <div id="matrix">placeholder</div>
+    </div>
+
+          <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      let artefactsOpen=false;
+      let artefactsDiv=document.getElementById("artefacts");
+      artefactsDiv.style.display="none";
+      document.getElementById("artefactPlus").onclick=function(){
+        artefactsOpen=!artefactsOpen;
+        if(artefactsOpen){
+        artefactsDiv.style.display="block";
+        document.getElementById("artefactPlus").innerHTML="-";
+      }else{
+        artefactsDiv.style.display="none";
+        document.getElementById("artefactPlus").innerHTML="+";
+      }
+      }
+      let reflectionsOpen=false;
+      let reflectionsDiv=document.getElementById("reflections");
+      reflectionsDiv.style.display="none";
+      document.getElementById("reflectionPlus").onclick=function(){
+        reflectionsOpen=!reflectionsOpen;
+        if(reflectionsOpen){
+        reflectionsDiv.style.display="block";
+        document.getElementById("reflectionPlus").innerHTML="-";
+      }else{
+        reflectionsDiv.style.display="none";
+        document.getElementById("reflectionPlus").innerHTML="+";
+      }
+      }
+      let notesOpen=false;
+      let notesDiv=document.getElementById("notes");
+      notesDiv.style.display="none";
+      document.getElementById("notesPlus").onclick=function(){
+        notesOpen=!notesOpen;
+        if(notesOpen){
+        notesDiv.style.display="block";
+        document.getElementById("notesPlus").innerHTML="-";
+      }else{
+        notesDiv.style.display="none";
+        document.getElementById("notesPlus").innerHTML="+";
+      }
+      }
+      let matrixOpen=false;
+      let matrixDiv=document.getElementById("matrix");
+      matrixDiv.style.display="none";
+      document.getElementById("matrixPlus").onclick=function(){
+        matrixOpen=!matrixOpen;
+        if(matrixOpen){
+        matrixDiv.style.display="block";
+        document.getElementById("matrixPlus").innerHTML="-";
+      }else{
+        matrixDiv.style.display="none";
+        document.getElementById("matrixPlus").innerHTML="+";
+      }
+      }
+    </script>
+  </body>
+</html>
